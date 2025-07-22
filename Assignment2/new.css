@@ -1,0 +1,274 @@
+:root {
+  --background-image-color: linear-gradient(to right, #ff512f 0%, #f09819 51%, #ff512f 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 1% 10%;
+  font-family: 'Poppins', sans-serif, 'arial';
+}
+
+header {
+  background-color: transparent;
+  height: 75px;
+  position: sticky;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+nav ul li a {
+  color: #434343;
+  text-decoration: none;
+  font-weight: 550;
+  text-align: center;
+  transition: 0.2s;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid #f09819;
+}
+
+.btn {
+  color: white;
+  background-image: var(--background-image-color);
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200%;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-position: right center;
+  color: #fff;
+}
+
+nav ul li:last-child a {
+  border: 2px solid #f09819;
+  padding: 10px 20px;
+  border-radius: 10px 30px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  letter-spacing: 0.7px;
+}
+
+nav ul li:last-child a:hover {
+  color: #191919;
+  background-image: var(--background-image-color);
+  background-position: right center;
+  text-decoration: none;
+}
+
+.logo {
+  width: 75px; /* Adjust this size as needed */
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px; /* Adjust this margin as needed */
+}
+
+.left-box {
+  width: 50%; /* Adjust this width as needed */
+}
+
+.right-box {
+  width: 40%; /* Adjust this width as needed */
+  position: relative;
+  top: 50px; /* Adjust this position as needed */
+  right: 50px; /* Adjust this position as needed */
+}
+
+/* Styling hero section */
+.hero {
+  height: 60vh;
+  background-color: #fff;
+  min-width: 100%;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+}
+
+.left-box {
+  min-width: 50%;
+  text-align: center;
+  margin-top: -40px;
+  z-index: 1;
+}
+
+.left-box p,
+.left-box h2 {
+  color: black;
+  font-size: 24px;
+  margin: 100px auto 8px auto;
+}
+
+.left-box h2 {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 10px auto 20px auto;
+}
+
+.btn {
+  margin-top: 220px;
+}
+
+.right-box {
+  z-index: 0;
+}
+
+.right-box img {
+  margin-left: -100px;
+}
+
+/* Styling about section */
+.about {
+  margin-top: 80px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  height: 60vh;
+  background-color: #fff;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.left-about {
+  background-color: #fff;
+  margin-left: 110px;
+}
+
+.left-about img {
+  border-radius: 8px;
+  height: 320px;
+}
+
+.right-about {
+  background-color: white;
+  color: black;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px gray, 2px 2px 2px gray;
+  margin-right: 65px;
+}
+
+.right-about h3 {
+  margin: 10px 0;
+}
+
+.right-about p {
+  margin: 10px 0 30px 0;
+}
+
+.about-btn {
+  margin-top: 40px;
+}
+
+/* Menu styling */
+.title h2 {
+  font-size: 34px;
+  text-align: center;
+  padding: 40px 0 0 0;
+}
+
+.menu {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0px 15px 40px 15px;
+}
+
+.item {
+  padding: 20px 30px;
+  transition: 0.2s ease-in;
+}
+
+.item:hover {
+  cursor: pointer;
+}
+
+.item:nth-child(1):hover {
+  background-color: #afe170;
+}
+
+.item:nth-child(2):hover {
+  background-color: orchid;
+}
+
+.item:nth-child(3):hover {
+  background-color: orange;
+}
+
+.item h4 {
+  margin-top: 7px;
+}
+
+.item p {
+  margin: 7px 0px 10px 0;
+}
+
+.buy-btn {
+  border-radius: 30px;
+  padding: 5px 15px;
+  font-size: 12px;
+  margin-top: 60px;
+}
+
+.item-1 {
+  width: 100px;
+}
+
+.item-img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+nav .search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  margin: 20px;
+}
+
+.search-container label {
+  margin-right: 10px; /* Space between label and input */
+  font-weight: bold; /* Make the label text bold */
+  color: #434343; /* Same color as other text elements in the nav */
+}
+
+.search-container input[type="text"] {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-container button {
+  padding: 6px;
+  background: #ff4081; /* Light button background color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ff1c63; /* Darker hover state for better contrast */
+}

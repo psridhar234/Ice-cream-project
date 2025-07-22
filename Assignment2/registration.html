@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Demographic content of Sweetlife" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="sweetlife">
+  <meta name="author" content="Prajeet">
+  <title>Sweetlife</title>
+  <link rel="stylesheet" type="text/css" href="new.css">
+  <link rel="stylesheet" type="text/css" href="registration.css">
+  <script src="registration.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="registration.html" class="btn">Registration</a></li>
+      <li><a href="Features.html">Features</a></li>
+      <li><img src="swinburnelogo.png" alt="Swinburne Logo" class="logo"></li>
+    </ul>
+  </nav>
+  <form id="survey" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+    <fieldset>
+      <legend>Registration Form</legend>
+      <h1>User Registration</h1>
+      
+      <label for="username">Username:</label><br>
+      <input type="text" id="username" name="username" aria-labelledby="username"><br><br>
+      
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password" aria-labelledby="password"><br><br>
+      
+      <label for="postcode">Postcode:</label><br>
+      <input type="text" id="postcode" name="postcode" aria-labelledby="postcode"><br><br>
+      
+      <label>Gender:</label><br>
+      <input type="radio" id="male" name="gender" value="male" aria-labelledby="gender-male">
+      <label for="male" id="gender-male">Male</label>
+      <input type="radio" id="female" name="gender" value="female" aria-labelledby="gender-female">
+      <label for="female" id="gender-female">Female</label><br><br>
+      
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" aria-labelledby="email"><br><br>
+      
+      <label>Favorite Ice Cream:</label><br>
+      <input type="checkbox" id="drumstick" name="iceCream" value="Drumstick" aria-labelledby="icecream-drumstick">
+      <label for="drumstick" id="icecream-drumstick">Drumstick</label><br>
+      <input type="checkbox" id="oreo" name="iceCream" value="Oreo" aria-labelledby="icecream-oreo">
+      <label for="oreo" id="icecream-oreo">Oreo</label><br>
+      <input type="checkbox" id="disney" name="iceCream" value="Disney" aria-labelledby="icecream-disney">
+      <label for="disney" id="icecream-disney">Disney</label><br><br>
+      
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+</body>
+</html>

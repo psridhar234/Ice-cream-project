@@ -1,0 +1,93 @@
+body {
+    font-family: 'Poppins', sans-serif, 'arial';
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1% 10%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent; /* Changed background color to transparent */
+    overflow: hidden;
+    display: flex; /* Change display to flex */
+    align-items: center; /* Align items vertically */
+    justify-content: space-evenly; /* Space items evenly */
+}
+
+nav ul li {
+    margin-right: 20px; /* Add margin between list items */
+}
+
+nav ul li a {
+    color: #434343;
+    text-decoration: none;
+    font-weight: 550;
+    text-align: center;
+    transition: 0.2s;
+    padding: 14px 16px; /* Adjust padding */
+    border-bottom: 3px solid transparent; /* Add transparent border */
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid #f09819; /* Change border color on hover */
+    color: #191919; /* Change text color on hover */
+}
+
+.logo {
+    width: 75px; /* Adjust logo size */
+    margin-right: 20px; /* Add margin to the right of the logo */
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 0; /* Change border to rectangular shape */
+    padding: 20px;
+    margin: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #111;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Tags. -->
+  <meta charset="utf-8">
+  <meta name="description" content="Demographic content of sweetlife" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="sweetlife">
+  <meta name="author" content="Prajeet">
+  <title>Sweetlife</title>
+  <link rel="stylesheet" type="text/css" href="new.css">
+  <link rel="stylesheet" type="text/css" href="order.css">
+  <script src="order.js" defer></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html" class="btn">Order</a></li>
+      <li><a href="registration.html">Registration</a></li>
+      <li><a href="Features.html">Features</a></li>
+      <li><img src="swinburnelogo.png" alt="Swinburne Logo" class="logo"></li>
+    </ul>
+  </nav>
+  <div id="errorBox" class="error-box"></div>
+  <form id="survey" method="post" action="http://mercury.swin.edu.au/it000000/cos10005/surveytest.php">
+    <fieldset>
+      <h1>Place Order</h1>
+      <legend>Order Details</legend>
+      <label for="deliveryMethod">Delivery or Pickup:</label><br>
+      <input type="radio" id="delivery" name="deliveryMethod" value="delivery">
+      <label for="delivery">Delivery</label><br>
+      <input type="radio" id="pickup" name="deliveryMethod" value="pickup">
+      <label for="pickup">Pickup</label><br><br>
+
+      <div id="deliveryAddressSection" style="display: none;">
+        <label for="deliveryAddress">Delivery Address:</label><br>
+        <input type="text" id="deliveryAddress" name="deliveryAddress"><br><br>
+      </div>
+
+      <label for="Address">Billing Address:</label><br>
+      <input type="text" id="Address" name="Address"><br><br>
+      <input type="checkbox" id="sameAsDelivery" name="sameAsDelivery">
+      <label for="sameAsDelivery">Same as Delivery Address</label><br><br>
+
+      <label for="contactNumber">Contact Number:</label><br>
+      <input type="text" id="contactNumber" name="contactNumber"><br><br>
+
+      <label for="email">Email for Receipt:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label for="paymentMethod">Pay on Pickup or Online:</label><br>
+      <input type="radio" id="payOnPickup" name="paymentMethod" value="payOnPickup">
+      <label for="payOnPickup">Pay on Pickup</label><br>
+      <input type="radio" id="payOnline" name="paymentMethod" value="payOnline">
+      <label for="payOnline">Pay Online</label><br><br>
+
+      <label for="creditCardType">Credit Card Type:</label><br>
+      <select id="creditCardType" name="creditCardType">
+        <option value="">Select Card Type</option>
+        <option value="visa">Visa</option>
+        <option value="mastercard">MasterCard</option>
+        <option value="amex">American Express</option>
+      </select><br><br>
+
+      <label for="creditCardNumber">Credit Card Number:</label><br>
+      <input type="text" id="creditCardNumber" name="creditCardNumber" maxlength="16"><br><br>
+
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+</body>
+</html>
